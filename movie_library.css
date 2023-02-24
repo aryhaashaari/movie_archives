@@ -1,0 +1,191 @@
+/* Include padding and border in the width and height */
+/***************************************************************************************
+* Title: How TO - Column Cards
+* Author: W3Schools
+* Availability: https://www.w3schools.com/howto/howto_css_column_cards.asp *
+***************************************************************************************/
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+/***************************************************************************************
+* Title: How TO - Column Cards
+* Author: W3Schools
+* Availability: https://www.w3schools.com/howto/howto_css_column_cards.asp *
+***************************************************************************************/
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+/***************************************************************************************
+* Title: How TO - Column Cards
+* Author: W3Schools
+* Availability: https://www.w3schools.com/howto/howto_css_column_cards.asp *
+***************************************************************************************/
+#favRow {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+/***************************************************************************************
+* Title: How TO - Column Cards
+* Author: W3Schools
+* Availability: https://www.w3schools.com/howto/howto_css_column_cards.asp *
+***************************************************************************************/
+#favRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Remove extra left and right margins, due to padding */
+/***************************************************************************************
+* Title: How TO - Column Cards
+* Author: W3Schools
+* Availability: https://www.w3schools.com/howto/howto_css_column_cards.asp *
+
+ ***************************************************************************************/
+#wacthedRow {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+#watchedRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Remove extra left and right margins, due to padding */
+/***************************************************************************************
+* Title: How TO - Column Cards
+* Author: W3Schools
+* Availability: https://www.w3schools.com/howto/howto_css_column_cards.asp *
+***************************************************************************************/
+#nextRow {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+/***************************************************************************************
+* Title: How TO - Column Cards
+* Author: W3Schools
+* Availability: https://www.w3schools.com/howto/howto_css_column_cards.asp *
+***************************************************************************************/
+#nextRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+/***************************************************************************************
+* Title: How TO - Column Cards
+* Author: W3Schools
+* Availability: https://www.w3schools.com/howto/howto_css_column_cards.asp *
+***************************************************************************************/
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+/***************************************************************************************
+* Title: How TO - Column Cards
+* Author: W3Schools
+* Availability: https://www.w3schools.com/howto/howto_css_column_cards.asp *
+***************************************************************************************/
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  padding-top: 30px;
+  text-align: center;
+  background-color: #FCF6F5FF;
+  margin-top: 15px;
+  color: 101820FF;
+  border-radius: 20px;
+}
+
+/* Set height for all images */
+img {
+  height: 350px;
+}
+
+/* Set movie covers width and fit the container */
+.coverImg {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Set font, color, and margin for everything inside body */
+body {
+  font-family: Georgia, serif;
+  font-weight: 500;
+  background-color: #101820FF;
+  color: black;
+  margin: 0;
+}
+
+/* Set div for the Favorites, Watched, and Watch Next rows*/
+.coverDiv {
+  margin: 25px;
+  background-color: #8ABAD3FF;
+  border: 2px solid snow;
+  margin-top: 50px;
+  border-radius: 25px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+
+/* Set div for the header */
+.coverDivHead {
+  /*margin: 20px;*/
+  background-color: #FCF6F5FF;
+  /*margin-top: 35px;*/
+  /*margin-bottom: 45px;*/
+  /*border-radius: 25px;*/
+  /*border: 2px solid snow;*/
+  padding: 10px;
+  font-size: 35px;
+
+  text-align: center;
+}
+
+/* Set a color background to all divs */
+div {
+  background-color: #8ABAD3FF;
+}
+
+/* Set the design of all buttons*/
+button {
+  background-color: #FCF6F5FF;
+  border: 1px solid #101820FF;
+  padding: 5px;
+  margin-top: 30px;
+  border-radius: 7px;
+  border-color: #FCF6F5FF;
+}
+
+/* Set effects when user hovers over a button */
+button:hover {
+  background-color: #101820FF;
+  color: #FCF6F5FF;
+}
+
+/* Set the design of all select tag */
+select {
+  background-color: #FCF6F5FF;
+  padding: 4px;
+  border-radius: 7px;
+  border-color: #FCF6F5FF;
+}

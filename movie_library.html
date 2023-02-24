@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Webpage title -->
+  <title>Library</title>
+  <!-- Link CSS file -->
+  <link rel="stylesheet" href="movie_library.css">
+</head>
+
+<body onload="loadProgram()">
+  <!-- Div for the header -->
+  <div class="coverDivHead">
+    <h1>Movie Library</h1>
+  </div>
+  <!-- Div for Favorite Movies -->
+  <div class="coverDiv">
+    <p style="text-align: center; font-size: 1.15em;">Favorites</p>
+    <div id="favRow"></div>
+    <br>
+    <!-- 'Add' button for adding movie -->
+    <button onclick="addFavorite()">Add</button> &nbsp;&nbsp;&nbsp;
+    <!-- select tag to choose the sort type --> <select id="sortFavMovie">
+      <option selected disabled></option>
+      <option value="name">Name</option>
+      <option value="genre">Genre</option>
+      <option value="year">Year</option>
+      <option value="director">Director</option>
+    </select>
+    <!-- 'Sort' button to sort the movies -->
+    <button onclick="sortMovie(document.getElementById('sortFavMovie').value,0)">Sort</button>
+  </div>
+  <!-- Div for Watched Movies -->
+  <div class="coverDiv">
+    <p style="text-align: center; font-size: 1.15em;">Watched</p>
+    <div id="watchedRow"></div>
+    <br>
+    <!-- 'Add' button for adding movie -->
+    <button onclick="addWatched()">Add</button> &nbsp;&nbsp;&nbsp;
+    <!-- select tag to choose the sort type --> <select id="sortWatchedMovie">
+      <option selected disabled></option>
+      <option value="name">Name</option>
+      <option value="genre">Genre</option>
+      <option value="year">Year</option>
+      <option value="director">Director</option>
+    </select>
+    <!-- 'Sort' button to sort the movies -->
+    <button onclick="sortMovie(document.getElementById('sortWatchedMovie').value,1)">Sort</button>
+  </div>
+  <!-- Div for Watch Next Movies -->
+  <div class="coverDiv">
+    <p style="text-align: center; font-size: 1.15em;">Watch Next</p>
+    <div id="nextRow"></div>
+    <br>
+    <!-- 'Add' button for adding movie -->
+    <button onclick="addNext()">Add</button>
+  </div>
+  <script src="movie_library.js"> </script>
+</body>
+
+</html>
